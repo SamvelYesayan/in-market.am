@@ -1,0 +1,125 @@
+.header-nav1{
+    width: 100%;
+    height: 5vh;
+    background-color: #59B149;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-nav1-div1{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-nav1-div2{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header-nav1>div>b{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-weight: 400;
+}
+
+.header-nav1-div2 b{
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.header-nav1-div2 b:hover{
+    opacity: 50%;
+}
+
+.header-nav2{
+    width: 100%;
+    height: 10vh;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* Reset default form styles */
+.search-form {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 8px;
+    flex: 1;
+  }
+  
+  .search-button {
+    background-color: #59B149;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  
+  /* Adjust button appearance */
+  .search-button:hover {
+    background-color: #2c6821;
+  }
+  
+  /* Optional: Adjust input focus appearance */
+  .search-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  }
+  
+  .header-nav2-div2{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .header-nav2-icon{
+    font-size: 2rem;
+    color: gray;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  .header-nav2-icon:hover{
+    opacity: 30%;
+  }
+
+  @media screen and (max-width: 900px) {
+    .header-nav1-div1,.header-nav1-div2{
+        width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .header-nav1-div1{
+        display: none;
+    }
+    .header-nav1-div2{
+        width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 450px){
+    .header-nav2{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        gap: 10px;
+    }
+
+  }
